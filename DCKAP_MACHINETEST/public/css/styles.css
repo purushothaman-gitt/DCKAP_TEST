@@ -1,0 +1,110 @@
+.sidebar {
+	position: fixed;
+	top: 50px;
+	bottom: 0;
+	left: 0;
+	box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+	z-index:auto;
+}
+
+nav ul {
+	list-style: none;
+
+	margin: 0;
+	padding: 0;
+}
+nav ul li {
+	/* Sub Menu */
+}
+nav ul li a {
+	display: block;
+	padding: 10px 15px;
+	color: #fff;
+	text-decoration: none;
+	-webkit-transition: 0.2s linear;
+	-moz-transition: 0.2s linear;
+	-ms-transition: 0.2s linear;
+	-o-transition: 0.2s linear;
+	transition: 0.2s linear;
+}
+nav ul li a:hover {
+	background: #1d4f71;
+	color: #fff;
+}
+nav ul li a .fa {
+	width: 16px;
+	text-align: center;
+	margin-right: 5px;
+	float:right;
+}
+nav ul ul {
+	background: rgba(0, 0, 0, 0.2);
+}
+nav ul li ul li a {
+	
+	border-left: 4px solid transparent;
+	padding: 10px 20px;
+}
+nav ul li ul li a:hover {
+	
+	border-left: 4px solid #3498db;
+}
+nav ul li p {
+	display: block;
+	padding: 10px 15px;
+	color: #fff;
+	text-decoration: none;
+	-webkit-transition: 0.2s linear;
+	-moz-transition: 0.2s linear;
+	-ms-transition: 0.2s linear;
+	-o-transition: 0.2s linear;
+	transition: 0.2s linear;
+}
+/* Remove default bullets */
+ul, #myUL {
+	list-style-type: none;
+
+}
+
+/* Remove margins and padding from the parent ul */
+#myUL {
+	margin: 0;
+	padding: 0;
+}
+
+/* Style the caret/arrow */
+.caret {
+	cursor: pointer;
+	user-select: none; /* Prevent text selection */
+}
+.caret p{
+	size: 50px; /* Prevent text selection */
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+.caret::before {
+	content: "\25B6";
+	color: black;
+	display: inline-block;
+	margin-right: 6px;
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.caret-down::before {
+	transform: rotate(90deg);
+}
+
+/* Hide the nested list */
+.nested {
+	display: none;
+}
+.nested .a{
+	padding-left: 10px;}
+
+	/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+	.active {
+		display: block;
+	}
+	.nested button{
+		width: 320px;
+	}
